@@ -12,6 +12,6 @@ class PrivateGraphQLView(LoginRequiredMixin, GraphQLView):
 
 def index(request):
     context = {
-        'books': Book.objects.all()
+        'books': Book.objects.all(),
     }
     return render(request, 'books/index.html', context)

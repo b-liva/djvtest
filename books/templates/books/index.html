@@ -12,7 +12,7 @@
 <body>
 {{ books }}
 <myweb-element cid="this is cid from passed from custom element"></myweb-element>
-<myweb-element></myweb-element>
+<myweb-element book="{{ books.last.name }}" author="{{ books.last.author }}"></myweb-element>
 <mine-element></mine-element>
 
 </body>
