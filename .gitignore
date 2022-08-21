@@ -1,0 +1,14 @@
+
+.idea/
+
+gqltest/__pycache__/
+
+*.sqlite3
+
+books/__pycache__/
+
+books/migrations/__pycache__/
+*node_modules/
+var/static_root/
+
+static/
