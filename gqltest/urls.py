@@ -22,5 +22,7 @@ from books.views import PrivateGraphQLView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', include('books.urls')),
+    path('themes/', include('theme.urls')),
     path("graphql", csrf_exempt(PrivateGraphQLView.as_view(graphiql=True))),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
